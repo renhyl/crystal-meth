@@ -166,7 +166,7 @@ body {
       background: #1a5da2; }
     body button:hover, body .btn:hover, body .btn-primary:hover {
       background: #1E69B8; }
-  body button, body input, body select, body textarea, body .btn {
+  body button, body input, body select, body textarea, body .btn, body input[type="submit"] {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
@@ -199,12 +199,16 @@ body {
       body .navbar-inverse .navbar-toggle:hover {
         background-color: #1E69B8; }
   body .get-quote {
+    line-height: 200px;
     padding: 25px 0 35px 0;
     background-color: #F5F5F5; }
+    body .get-quote h2, body .get-quote .promo-button {
+      display: inline-block;
+      vertical-align: middle;
+      float: none; }
   body .promo-button {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 70px;
     color: #FFF;
     text-transform: uppercase;
     padding: 10px 35px; }
@@ -221,25 +225,31 @@ body {
     body .small-services .col-xs-12:nth-child(2) {
       padding: 45px 15px;
       background-color: #F5F5F5; }
-  body .offer .col-xs-12 {
-    padding: 0px; }
+  body .offer {
+    margin-top: 60px; }
+    body .offer a {
+      font-size: 24px;
+      display: block;
+      color: #000;
+      background-color: #E7E7E7; }
+      body .offer a:hover {
+        color: #1E69B8;
+        text-decoration: none; }
+    body .offer .col-xs-12 {
+      padding: 0px; }
+  body #contact {
+    padding: 0px 15px 0px 20px; }
   body #footer {
-    margin-top: 30px; }
-
-#carousel-id img {
-  min-width: 100%; }
-
-.blog-footer a {
-  color: #FFF;
-  text-decoration: underline; }
-
-.blog-footer a:hover {
-  text-decoration: none; }
-
-#copyright {
-  padding: 25px 0; }
-
-.aa {
-  color: #FFF; }
+    margin-top: 30px;
+    padding: 0px 30px 0px 30px; }
+  body #carousel-id img {
+    min-width: 100%; }
+  body .blog-footer a {
+    color: #FFF;
+    text-decoration: underline; }
+  body .blog-footer a:hover {
+    text-decoration: none; }
+  body #copyright {
+    padding: 25px 0; }
 
 /*# sourceMappingURL=style.css.map */

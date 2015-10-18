@@ -1,5 +1,12 @@
 (function ($) {
   $(document).ready(function () {
+  	$('input[type="submit"], .btn, .button').each(function() {
+  		if( $(this).hasClass('hvr-sweep-to-right') === false ) {
+  			$(this).addClass('hvr-sweep-to-right');
+  			$(this).addClass('promo-button');
+  		}
+  	});
+
     $('#searchsubmit, #commentform #submit').addClass('btn btn-default');
 	$('button, html input[type="button"], input[type="reset"], input[type="submit"]').addClass('btn btn-default');
 	$('input:not(button, html input[type="button"], input[type="reset"], input[type="submit"]), input[type="file"], select, textarea').addClass('form-control');

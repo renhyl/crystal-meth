@@ -86,16 +86,16 @@ get_header(); ?>
 </div>
 
 <div class="row offer text-center">
-		<div class="col-xs-10 col-sm-10 col-sm-offset-1">
-			<div class="col-xs-12 col-sm-4">
-				<a href="<?php echo the_field('promo_one_url');?>" class="text-uppercase"><img src="<?php echo the_field('promo_one_image');?>" class="img-responsive" alt="Image"><?php echo the_field('promo_one_heading');?></a>
-			</div>
-			<div class="col-xs-12 col-sm-4">
-				<a href="<?php echo the_field('promo_two_url');?>" class="text-uppercase"><img src="<?php echo the_field('promo_two_image');?>" class="img-responsive" alt="Image"><?php echo the_field('promo_two_heading');?></a>
-			</div>
-			<div class="col-xs-12 col-sm-4">
-				<a href="<?php echo the_field('promo_three_url');?>" class="text-uppercase"><img src="<?php echo the_field('promo_three_image');?>" class="img-responsive" alt="Image"><?php echo the_field('promo_three_heading');?></a>
-			</div>
+	<div class="col-xs-12">
+		<div class="col-xs-12 col-sm-4">
+			<a href="<?php echo the_field('promo_one_url');?>" class="text-uppercase"><img src="<?php echo the_field('promo_one_image');?>" class="img-responsive" alt="Image"><?php echo the_field('promo_one_heading');?><i class="fa fa-arrow-right"></i></a>
 		</div>
+		<div class="col-xs-12 col-sm-4">
+			<a href="<?php echo the_field('promo_two_url');?>" class="text-uppercase"><img src="<?php echo the_field('promo_two_image');?>" class="img-responsive" alt="Image"><?php echo the_field('promo_two_heading');?><i class="fa fa-arrow-right"></i></a>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<a href="<?php echo the_field('promo_three_url');?>" class="text-uppercase"><img src="<?php echo the_field('promo_three_image');?>" class="img-responsive" alt="Image"><?php echo the_field('promo_three_heading');?><i class="fa fa-arrow-right"></i></a>
+		</div>
+	</div>
 </div>
 <?php get_footer(); ?>

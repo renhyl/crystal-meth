@@ -229,7 +229,7 @@ body {
         }
     }
 
-    button, input, select, textarea, .btn {
+    button, input, select, textarea, .btn, input[type="submit"] {
         @include border-radius(0px);
     }
 
@@ -296,14 +296,20 @@ body {
     }
 
     .get-quote {
+        line-height: 200px;
         padding: 25px 0 35px 0;
         background-color: $very-light-grey;
+
+        h2, .promo-button {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
     }
 
     .promo-button {
         font-size: $h4;
         font-weight: bold;
-        margin-top: 70px;
         color: #FFF;
         text-transform: uppercase;
         padding: 10px 35px;
@@ -333,34 +339,49 @@ body {
     }
 
     .offer {
+        margin-top: 60px;
+
+        a {
+            font-size: $h3;
+            display: block;
+            color: #000;
+            background-color: $light-grey;
+
+            &:hover {
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+
         .col-xs-12 {
             padding: 0px;
         }
     }
 
+    #contact {
+        padding: 0px 15px 0px 20px;
+    }
+
     #footer {
         margin-top: 30px;
+        padding: 0px 30px 0px 30px;
+    }
+    
+    #carousel-id img {
+        min-width: 100%;
+    }
+
+    .blog-footer a {
+        color: #FFF;
+        text-decoration: underline;
+    }
+
+    .blog-footer a:hover {
+        text-decoration: none;
+    }
+
+    #copyright {
+        padding: 25px 0;
     }
 }
 
-
-#carousel-id img {
-    min-width: 100%;
-}
-
-.blog-footer a {
-    color: #FFF;
-    text-decoration: underline;
-}
-
-.blog-footer a:hover {
-    text-decoration: none;
-}
-
-#copyright {
-    padding: 25px 0;
-}
-
-.aa {
-    color: #FFF;
-}

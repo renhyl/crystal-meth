@@ -12,7 +12,7 @@
 
 <div id="footer">
 <div class="row">
-    <div class="col-xs-12 blog-footer text-center">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 blog-footer text-center">
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <?php get_sidebar( 'footer' ); ?>
