@@ -1,0 +1,367 @@
+/*
+Theme Name: Crystal Meth
+Theme URI: 
+Author: Damian Boni
+Author URI: 
+Description: The 2015 theme for WordPress built on Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, white, light, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, editor-style, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: crystalmeth
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px auto 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption .alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.gallery-item img {
+    border-width: 1px;
+    margin-bottom: 0;
+}
+
+.wp-post-image {
+	margin-bottom: 20px;
+}
+
+.bypostauthor {
+}
+
+.entry {
+	margin-bottom: 20px;
+}
+
+.widget {
+	text-align: justify;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+#searchsubmit {
+	margin: 4px 0;
+}
+
+.comment-list {
+	padding: 0;
+}
+
+.comment-list, 
+.children:nth-child(n+1) {
+	list-style: none;
+}
+
+@media (max-width: 767px) {
+	.comment-list, 
+	.children:nth-child(n+1) {
+		padding: 0;
+  	} 
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/**   
+ * CUSTOM
+ * 
+ */
+
+/** 
+ * Custom Colours
+ */
+$very-light-grey: #F5F5F5;
+$light-grey: #E7E7E7;
+$grey: #BBB;
+$dark-grey: #666;
+$blue: #1E69B8;
+$dark-blue: #1a5da2;
+
+/**
+ * Custom Fonts;
+ */
+$font-main: 'Open Sans';
+
+/**
+ * Custom Font Sizes
+ */
+$h1: 34px;
+$h2: 28px;
+$h3: 24px;
+$h4: 18px;
+$h5: 16px;
+$h6: 14px;
+
+/**
+ * Custom Mixins
+ */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+    font-family: $font-main;
+    color: $dark-grey;
+    
+    a {
+        color: $grey;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    button, .btn, .btn-primary {
+        color: #FFF;
+        background: $blue;
+        border: none;
+
+        &:before {
+            background: $dark-blue;
+        }
+        
+        &:hover {
+            background: $blue;
+        }
+    }
+
+    button, input, select, textarea, .btn {
+        @include border-radius(0px);
+    }
+
+    .navbar-static-top .fa {
+        margin-right: 5px;
+    }
+
+    .social-icons {
+        li {
+            border-left: 1px solid $light-grey;
+        }
+        
+        li:last-child {
+            border-right: 1px solid $light-grey;
+        }
+    }
+
+    #menu-main-menu {
+        li {
+            a {
+                color: $dark-grey;
+                font-size: 16px;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    
+    .navbar-inverse {
+        font-family: 'Open Sans';
+        background-color: #FFF;
+        border: none;
+
+        .navbar-header {
+            .navbar-brand {
+                font-size: $h1;
+                font-weight: 800;
+                color: $blue;
+            }
+        }
+        
+        .navbar-nav {
+            >.active {
+                >a {
+                    background-color: #FFF;
+
+                    &:hover {
+      
+                        background-color: inherit;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggle {
+            background-color: $light-grey;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+
+    .get-quote {
+        padding: 25px 0 35px 0;
+        background-color: $very-light-grey;
+    }
+
+    .promo-button {
+        font-size: $h4;
+        font-weight: bold;
+        margin-top: 70px;
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 10px 35px;
+    }
+
+    .promo-icons {
+        text-align: center;
+        padding: 45px 0px;
+        
+        .fa {
+            font-size: $h1;
+        }
+    }
+
+    .small-services {
+        .col-xs-12 {
+            min-height: 350px;
+        }
+        .col-xs-12:nth-child(1) {
+            background: url('http://placehold.it/1920x1200');
+            background-size: cover;
+        }
+
+        .col-xs-12:nth-child(2) {
+            padding: 45px 15px;
+            background-color: $very-light-grey;
+        }
+    }
+
+    .services {
+        .col-xs-12 {
+            padding: 0px;
+        }
+    }
+
+    #footer {
+        margin-top: 30px;
+    }
+}
+
+
+#carousel-id img {
+    min-width: 100%;
+}
+
+.blog-footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.blog-footer a:hover {
+    text-decoration: none;
+}
+
+#copyright {
+    padding: 25px 0;
+}
+
+.aa {
+    color: #FFF;
+}
